@@ -7,16 +7,26 @@
     <title>Battleship</title>
   </head>
   <body>
+    <!-- Header Component -->
     <header class="primary-header">
       <div class="container">
         <h1 class="title">Battleship</h1>
         <p class="subtitle">
-          Made with ❤️ by <span class="author">Carlo Dacuyan</span>
+          Made with ❤️ by <span class="author">Carlo Dacuyan</span> design by
+          <span class="author">
+            <a
+              href="https://dribbble.com/shots/15367230-Battleship-Gameplay"
+              target="_blank"
+              >unfold</a
+            >
+          </span>
         </p>
       </div>
     </header>
 
+    <!-- Main Game Component -->
     <main class="game">
+      <!-- Player Component -->
       <section class="player player_1">
         <h2 class="player-title">Your Fleet</h2>
         <div class="board-container">
@@ -46,6 +56,26 @@
             <p>J</p>
           </div>
           <div class="board board-player-1">
+            <div class="board-cell">
+              <div class="ship-back">
+                <div class="hit"></div>
+              </div>
+            </div>
+            <div class="board-cell">
+              <div class="ship-body">
+                <div class="hit"></div>
+              </div>
+            </div>
+            <div class="board-cell">
+              <div class="ship-body">
+                <div class="occupied-not-hit"></div>
+              </div>
+            </div>
+            <div class="board-cell">
+              <div class="ship-front">
+                <div class="occupied-not-hit"></div>
+              </div>
+            </div>
             <div class="board-cell"></div>
             <div class="board-cell"></div>
             <div class="board-cell"></div>
@@ -54,6 +84,9 @@
             <div class="board-cell"></div>
             <div class="board-cell"></div>
             <div class="board-cell"></div>
+            <div class="board-cell">
+              <div class="hit-missed-player-1"></div>
+            </div>
             <div class="board-cell"></div>
             <div class="board-cell"></div>
             <div class="board-cell"></div>
@@ -68,6 +101,16 @@
             <div class="board-cell"></div>
             <div class="board-cell"></div>
             <div class="board-cell"></div>
+            <div class="board-cell">
+              <div class="ship-back">
+                <div class="occupied-not-hit"></div>
+              </div>
+            </div>
+            <div class="board-cell">
+              <div class="ship-front">
+                <div class="occupied-not-hit"></div>
+              </div>
+            </div>
             <div class="board-cell"></div>
             <div class="board-cell"></div>
             <div class="board-cell"></div>
@@ -86,6 +129,21 @@
             <div class="board-cell"></div>
             <div class="board-cell"></div>
             <div class="board-cell"></div>
+            <div class="board-cell">
+              <div class="ship-back">
+                <div class="occupied-not-hit"></div>
+              </div>
+            </div>
+            <div class="board-cell">
+              <div class="ship-body">
+                <div class="occupied-not-hit"></div>
+              </div>
+            </div>
+            <div class="board-cell">
+              <div class="ship-front">
+                <div class="occupied-not-hit"></div>
+              </div>
+            </div>
             <div class="board-cell"></div>
             <div class="board-cell"></div>
             <div class="board-cell"></div>
@@ -113,6 +171,21 @@
             <div class="board-cell"></div>
             <div class="board-cell"></div>
             <div class="board-cell"></div>
+            <div class="board-cell">
+              <div class="ship-back">
+                <div class="occupied-not-hit"></div>
+              </div>
+            </div>
+            <div class="board-cell">
+              <div class="ship-body">
+                <div class="occupied-not-hit"></div>
+              </div>
+            </div>
+            <div class="board-cell">
+              <div class="ship-front">
+                <div class="occupied-not-hit"></div>
+              </div>
+            </div>
             <div class="board-cell"></div>
             <div class="board-cell"></div>
             <div class="board-cell"></div>
@@ -124,24 +197,31 @@
             <div class="board-cell"></div>
             <div class="board-cell"></div>
             <div class="board-cell"></div>
-            <div class="board-cell"></div>
-            <div class="board-cell"></div>
-            <div class="board-cell"></div>
-            <div class="board-cell"></div>
-            <div class="board-cell"></div>
-            <div class="board-cell"></div>
-            <div class="board-cell"></div>
-            <div class="board-cell"></div>
-            <div class="board-cell"></div>
-            <div class="board-cell"></div>
-            <div class="board-cell"></div>
-            <div class="board-cell"></div>
-            <div class="board-cell"></div>
-            <div class="board-cell"></div>
-            <div class="board-cell"></div>
-            <div class="board-cell"></div>
-            <div class="board-cell"></div>
-            <div class="board-cell"></div>
+            <div class="board-cell">
+              <div class="ship-back">
+                <div class="occupied-not-hit"></div>
+              </div>
+            </div>
+            <div class="board-cell">
+              <div class="ship-body">
+                <div class="occupied-not-hit"></div>
+              </div>
+            </div>
+            <div class="board-cell">
+              <div class="ship-body">
+                <div class="occupied-not-hit"></div>
+              </div>
+            </div>
+            <div class="board-cell">
+              <div class="ship-body">
+                <div class="occupied-not-hit"></div>
+              </div>
+            </div>
+            <div class="board-cell">
+              <div class="ship-front">
+                <div class="hit"></div>
+              </div>
+            </div>
             <div class="board-cell"></div>
             <div class="board-cell"></div>
             <div class="board-cell"></div>
@@ -160,6 +240,7 @@
         </div>
       </section>
 
+      <!-- Player Component -->
       <section class="player player_2">
         <h2 class="player-title">Opponent</h2>
         <div class="board-container">
@@ -193,6 +274,9 @@
             <div class="board-cell"></div>
             <div class="board-cell"></div>
             <div class="board-cell"></div>
+            <div class="board-cell">
+              <div class="hit-missed-player-2"></div>
+            </div>
             <div class="board-cell"></div>
             <div class="board-cell"></div>
             <div class="board-cell"></div>
@@ -207,6 +291,9 @@
             <div class="board-cell"></div>
             <div class="board-cell"></div>
             <div class="board-cell"></div>
+            <div class="board-cell">
+              <div class="hit-missed-player-2"></div>
+            </div>
             <div class="board-cell"></div>
             <div class="board-cell"></div>
             <div class="board-cell"></div>
@@ -220,9 +307,9 @@
             <div class="board-cell"></div>
             <div class="board-cell"></div>
             <div class="board-cell"></div>
-            <div class="board-cell"></div>
-            <div class="board-cell"></div>
-            <div class="board-cell"></div>
+            <div class="board-cell">
+              <div class="hit-missed-player-2"></div>
+            </div>
             <div class="board-cell"></div>
             <div class="board-cell"></div>
             <div class="board-cell"></div>
