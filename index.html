@@ -7,92 +7,96 @@
     <title>Battleship</title>
   </head>
   <body>
-    <main class="game gradient-border-pseudo gradient-border-pseudo::after">
-      <header class="primary-header">
-        <div class="container">
-          <h1 class="title">Battleship</h1>
-          <p class="subtitle">
-            Made with ❤️ by <span class="author">Carlo Dacuyan</span> design by
-            <span class="author">
-              <a href="https://dribbble.com/shots/15367230-Battleship-Gameplay" target="_blank">unfold</a>
-            </span>
-          </p>
+    <div class="game-container">
+      <main class="game gradient-border-pseudo gradient-border-pseudo::after">
+        <header class="primary-header">
+          <div class="container">
+            <h1 class="title">Battleship</h1>
+            <p class="subtitle">
+              Made with ❤️ by <span class="author">Carlo Dacuyan</span> design by
+              <span class="author">
+                <a href="https://dribbble.com/shots/15367230-Battleship-Gameplay" target="_blank">unfold</a>
+              </span>
+            </p>
+          </div>
+        </header>
+        <div class="players">
+          <section class="player player_1">
+            <h2 class="player-title">Your Fleet</h2>
+            <div class="board-container">
+              <div class="blank-div"></div>
+              <div class="labels-num">
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>4</p>
+                <p>5</p>
+                <p>6</p>
+                <p>7</p>
+                <p>8</p>
+                <p>9</p>
+                <p>10</p>
+              </div>
+              <div class="labels-char">
+                <p>A</p>
+                <p>B</p>
+                <p>C</p>
+                <p>D</p>
+                <p>E</p>
+                <p>F</p>
+                <p>G</p>
+                <p>H</p>
+                <p>I</p>
+                <p>J</p>
+              </div>
+              <div class="board board-player-1"></div>
+            </div>
+            <div class="shipyard">
+              <h3>Status</h3>
+              <div class="ships ships-1"></div>
+            </div>
+          </section>
+    
+          <section class="player player_2">
+            <h2 class="player-title">Opponent</h2>
+            <div class="board-container">
+              <div class="blank-div"></div>
+              <div class="labels-num">
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>4</p>
+                <p>5</p>
+                <p>6</p>
+                <p>7</p>
+                <p>8</p>
+                <p>9</p>
+                <p>10</p>
+              </div>
+              <div class="labels-char">
+                <p>A</p>
+                <p>B</p>
+                <p>C</p>
+                <p>D</p>
+                <p>E</p>
+                <p>F</p>
+                <p>G</p>
+                <p>H</p>
+                <p>I</p>
+                <p>J</p>
+              </div>
+              <div class="board board-player-2"></div>
+            </div>
+            <div class="shipyard">
+              <h3>Status</h3>
+              <div class="ships ships-2"></div>
+            </div>
+          </section>
         </div>
-      </header>
-      <div class="players">
-        <section class="player player_1">
-          <h2 class="player-title">Your Fleet</h2>
-          <div class="board-container">
-            <div class="blank-div"></div>
-            <div class="labels-num">
-              <p>1</p>
-              <p>2</p>
-              <p>3</p>
-              <p>4</p>
-              <p>5</p>
-              <p>6</p>
-              <p>7</p>
-              <p>8</p>
-              <p>9</p>
-              <p>10</p>
-            </div>
-            <div class="labels-char">
-              <p>A</p>
-              <p>B</p>
-              <p>C</p>
-              <p>D</p>
-              <p>E</p>
-              <p>F</p>
-              <p>G</p>
-              <p>H</p>
-              <p>I</p>
-              <p>J</p>
-            </div>
-            <div class="board board-player-1"></div>
-          </div>
-          <div class="shipyard">
-            <h3>Status</h3>
-            <div class="ships ships-1"></div>
-          </div>
-        </section>
-  
-        <section class="player player_2">
-          <h2 class="player-title">Opponent</h2>
-          <div class="board-container">
-            <div class="blank-div"></div>
-            <div class="labels-num">
-              <p>1</p>
-              <p>2</p>
-              <p>3</p>
-              <p>4</p>
-              <p>5</p>
-              <p>6</p>
-              <p>7</p>
-              <p>8</p>
-              <p>9</p>
-              <p>10</p>
-            </div>
-            <div class="labels-char">
-              <p>A</p>
-              <p>B</p>
-              <p>C</p>
-              <p>D</p>
-              <p>E</p>
-              <p>F</p>
-              <p>G</p>
-              <p>H</p>
-              <p>I</p>
-              <p>J</p>
-            </div>
-            <div class="board board-player-2"></div>
-          </div>
-          <div class="shipyard">
-            <h3>Status</h3>
-            <div class="ships ships-2"></div>
-          </div>
-        </section>
-      </div>
-    </main>
+      </main>
+      
+      <div class="restart">RESTART</div>
+    </div>
     
     <div class="menu-container">
       <header class="primary-header">
@@ -211,7 +215,8 @@
         <div class="winner"></div>
         <div class="player-winner"></div>
         <div class="continue">
-          <button class="quit">RESTART</button>
+          <button class="next-round">REVIEW</button>
+          <button class="quit">QUIT</button>
         </div>
       </div>
     </div>
